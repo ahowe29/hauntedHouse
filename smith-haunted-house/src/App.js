@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AnimationExample from './AnimationExample.js';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { blue600, red500 } from 'material-ui/styles/colors';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+
+const muiTheme = getMuiTheme({
+  palette: {
+    primary1Color: blue600,
+    accent1Color: red500,
+  }
+});
 
 class App extends Component {
   render() {
+    let theme = (this.props.theme) ? getMuiTheme(darkBaseTheme): muiTheme;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <MuiThemeProvider muiTheme={theme}>
+      <div>
+        <AnimationExample/>
       </div>
+      </MuiThemeProvider>
     );
   }
 }

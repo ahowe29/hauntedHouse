@@ -2,8 +2,11 @@
   "name": "smith-haunted-house",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://alliehowe.tech/hauntedHouse",
   "dependencies": {
+    "google-maps-react": "^1.1.0",
     "react": "^16.0.0",
+    "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
   },

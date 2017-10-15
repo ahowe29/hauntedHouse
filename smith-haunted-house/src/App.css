@@ -9,13 +9,19 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 170px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 3.2em;
+  font-family: 'Nosifer', cursive !important;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 2px;
 }
 
 .App-intro {
