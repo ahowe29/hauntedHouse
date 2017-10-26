@@ -6,8 +6,9 @@
 
 .nonspooky {
   font-family: 'Open Sans Condensed', sans-serif !important;
-  padding: 0px;,
-  margin: 0px;
+  line-height: 1.0em !important;
+  padding-bottom: 0.3em !important;
+
 }
 
 .car {
@@ -15,4 +16,20 @@
   font-size: 15px !important;
   padding: 0px;,
   margin: 0px;
+}
+.bright {
+  -webkit-filter: brightness(160%);
+
+}
+.notbright {
+  -webkit-filter: brightness(60%);
+
+}
+.bright2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+a{
+  color: white;
 }

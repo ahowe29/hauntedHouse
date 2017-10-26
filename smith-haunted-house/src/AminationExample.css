@@ -9,5 +9,5 @@
 }
 
 .spooky {
-  font-family: 'Creepster', cursive;
+  font-family: 'Creepster', cursive !important;
 }

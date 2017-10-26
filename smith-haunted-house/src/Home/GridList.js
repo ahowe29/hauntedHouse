@@ -2,12 +2,14 @@ import React, {Component} from 'react';
 import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
-import Boo from '../assets/boo.jpg';
-import Boo2 from '../assets/boo2.jpg';
-import GhostCat from '../assets/ghost-cat.jpg';
-import House from '../assets/house.jpeg';
-import Spider from '../assets/spider.jpeg';
-import Grid1 from '../assets/grid.jpg';
+import walkway from '../assets/walkway.jpeg';
+import skelly from '../assets/skelly.jpeg';
+import dress from '../assets/green_dress.jpeg';
+import rave from '../assets/rave.jpeg';
+import jack from '../assets/jack.jpeg';
+import jack2 from '../assets/jack2.jpeg';
+import pumpkins from '../assets/day_pumpkins.jpeg';
+import freakyLady from '../assets/freakyLady.jpeg';
 
 
 const styles = {
@@ -25,44 +27,44 @@ const styles = {
 
 const tilesData = [
   {
-    img: Boo,
+    img: pumpkins,
     title: 'Boo',
     author: 'jill111',
   },
   {
-    img: Spider,
+    img: rave,
     title: 'spider',
     author: 'pashminu',
   },
   {
-    img: GhostCat,
+    img: dress,
     title: 'ghost',
     author: 'Danson67',
   },
   {
-    img: House,
+    img: jack,
     title: 'haunted house',
     author: 'fancycrave1',
   },
   {
-    img: Boo2,
+    img: skelly,
     title: 'boo',
     author: 'Hans',
     featured: true,
   },
   {
-    img: Grid1,
+    img: walkway,
     title: 'happy halloween',
     author: 'fancycravel',
     featured: true,
   },
   {
-    img: Boo2,
+    img: freakyLady,
     title: 'boo',
     author: 'jill111',
   },
   {
-    img: GhostCat,
+    img: jack2,
     title: 'ghost and cat',
     author: 'BkrmadtyaKarki',
   },
@@ -84,9 +86,8 @@ class GridList1 extends Component {
               {tilesData.map((tile) => (
                 <GridTile
                   key={tile.img}
-                  title={tile.title}
                   cols={tile.featured ? 2 : 1}
-                  rows={tile.featured ? 3 : 1}
+                  rows={tile.featured ? 2 : 1}
                 >
                   <img src={tile.img} />
                 </GridTile>

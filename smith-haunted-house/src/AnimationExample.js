@@ -3,6 +3,7 @@ import Home from './Home/Home.js';
 import About from './About/About.js';
 import HowItWorks from './HowItWorks.js';
 import Contact from './Contact.js';
+//import {browserHistory} from 'react-router'
 import  {CSSTransitionGroup}  from 'react-transition-group';
 import './AminationExample.css';
 import {
